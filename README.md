@@ -53,7 +53,7 @@ Svelte current limitations:
 
 The code of your component lives inside `/src/index.svelte`, this is the main point for either Storybook and the building process. It's important that this file has it's own style tag with content in it, otherwise we cannot inject the styles of your app inside the shadow DOM of the custom element. ([read the build script](./scripts/build.js))
 
-The global styles for your Svelte component lives inside `/src/styles.svelte`, this file is important because we get the compiled CSS from this and inject it in Storybook so you can have global styles in all your stories without the need to duplicate this styles.
+The global style for your Svelte component lives inside `/src/styles.svelte`, this file is important because we get the compiled CSS from it, which we then inject into Storybook, so that you can have global styles in all of your stories without having to duplicate it.
 
 ## Available scripts
 
